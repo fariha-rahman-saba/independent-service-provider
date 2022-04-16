@@ -4,6 +4,7 @@ import AboutMe from './Pages/AboutMe/AboutMe';
 import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
+import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 
 function App () {
@@ -17,6 +18,7 @@ function App () {
         <Route path='/aboutme' element={<AboutMe></AboutMe>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

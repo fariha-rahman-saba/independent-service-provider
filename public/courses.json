@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Complete Python Mastery",
+        "image": "hthttps://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/BFMMlbcQvml9HSqXcvNp",
+        "short_desc": "Everything you need to program in Python in one course (includes 3 real-world projects)",
+        "price": "$14.99"
+    },
+    {
+        "id": 2,
+        "name": "Complete Python Mastery",
+        "image": "hthttps://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/BFMMlbcQvml9HSqXcvNp",
+        "short_desc": "Everything you need to program in Python in one course (includes 3 real-world projects)",
+        "price": "$14.99"
+    },
+    {
+        "id": 3,
+        "name": "Complete Python Mastery",
+        "image": "hthttps://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/BFMMlbcQvml9HSqXcvNp",
+        "short_desc": "Everything you need to program in Python in one course (includes 3 real-world projects)",
+        "price": "$14.99"
+    },
+    {
+        "id": 4,
+        "name": "Complete Python Mastery",
+        "image": "hthttps://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/BFMMlbcQvml9HSqXcvNp",
+        "short_desc": "Everything you need to program in Python in one course (includes 3 real-world projects)",
+        "price": "$14.99"
+    },
+    {
+        "id": 5,
+        "name": "Complete Python Mastery",
+        "image": "hthttps://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/BFMMlbcQvml9HSqXcvNp",
+        "short_desc": "Everything you need to program in Python in one course (includes 3 real-world projects)",
+        "price": "$14.99"
+    },
+    {
+        "id": 6,
+        "name": "Complete Python Mastery",
+        "image": "hthttps://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/BFMMlbcQvml9HSqXcvNp",
+        "short_desc": "Everything you need to program in Python in one course (includes 3 real-world projects)",
+        "price": "$14.99"
+    }
+]

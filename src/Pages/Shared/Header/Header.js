@@ -8,12 +8,13 @@ const Header = () => {
         <>
             <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg" >
                 <Container>
-                    <Navbar.Brand href="#home">Code With Saba</Navbar.Brand>
+                    <Navbar.Brand as={HashLink} to="/home">Code With Saba</Navbar.Brand>
                     <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
-                        <Nav.Link as={HashLink} to="/blogs">Blogs</Nav.Link>
+                    <Navbar.Collapse className="justify-content-end ">
+                        <Nav.Link className='text-white' as={HashLink} to="/home#home">Home</Nav.Link>
+                        <Nav.Link className='text-white' as={HashLink} to="/home#services">Services</Nav.Link>
+                        <Nav.Link className='text-white' as={HashLink} to="/blogs">Blogs</Nav.Link>
+                        <Nav.Link className='text-white' as={HashLink} to="/aboutme">About Me</Nav.Link>
 
                         {/* {user?.email ?
                             <Button onClick={logOut} variant="light">Logout</Button> :
