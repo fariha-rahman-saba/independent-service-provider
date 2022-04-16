@@ -23,19 +23,19 @@ const Home = () => {
             <img className='img-fluid' src={banner} alt="" />
             <div>
                 <h1 id='courses'>Courses</h1>
-                <div className='courses'>
+                {/* <div className='courses'>
                     {
-                        courses.map(course => <SingleCourse key={course.id} course={course}></SingleCourse>)
+                        // courses.map(course => <SingleCourse key={course.id} course={course}></SingleCourse>)
                     }
-                </div>
+                </div> */}
                 <h1 id='reviews'>
                     Reviews
                 </h1>
-                <div>
+                {/* <div>
                     {
                         reviews.map(review => <SingleReview key={review.id} course={review}></SingleReview>)
                     }
-                </div>
+                </div> */}
             </div>
         </div>
 

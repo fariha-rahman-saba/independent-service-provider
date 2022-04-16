@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { Button, Form, ToastContainer, toast } from 'react-bootstrap';
+import { Button, Form, ToastContainer } from 'react-bootstrap';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
@@ -45,10 +45,10 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Sent email');
+            // toast('Sent email');
         }
         else {
-            toast('please enter your email address');
+            // toast('please enter your email address');
         }
     }
 
