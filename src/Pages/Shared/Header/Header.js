@@ -22,24 +22,19 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end ">
                         <Nav.Link className='text-white' as={HashLink} to="/home#home">Home</Nav.Link>
-                        <Nav.Link className='text-white' as={HashLink} to="/home#services">Courses</Nav.Link>
+                        <Nav.Link className='text-white' as={HashLink} to="/home#courses">Courses</Nav.Link>
                         <Nav.Link className='text-white' as={Link} to="/blogs">Blogs</Nav.Link>
                         <Nav.Link className='text-white' as={HashLink} to="/home#reviews">Reviews</Nav.Link>
                         <Nav.Link className='text-white' as={Link} to="/aboutme">About Me</Nav.Link>
                         {
                             user ?
-                                <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>sign out</button>
+                                <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign out</button>
                                 :
-                                <Nav.Link as={Link} to="login">
+                                <Nav.Link className='text-white' as={Link} to="login">
                                     Login
                                 </Nav.Link>}
 
-                        {/* {user?.email ?
-                            <Button onClick={logOut} variant="light">Logout</Button> :
-                            <Nav.Link as={Link} to="/login">Login</Nav.Link>}
-                        <Navbar.Text>
-                            Signed in as: <a href="#login">{user?.displayName}</a>
-                        </Navbar.Text> */}
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
