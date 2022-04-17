@@ -7,7 +7,7 @@ const SingleCourse = ({ course }) => {
     return (
         <div className='course'>
             <img src={image} alt="" width="200px" height="130px" />
-            <h4>{name}</h4>
+            <h4 className='mt-3'>{name}</h4>
             <p>{short_desc}</p>
             <h5>{price}</h5>
             <button className='btn btn-primary w-50 mx-auto d-block mb-2'>Check out →</button>

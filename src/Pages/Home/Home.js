@@ -29,14 +29,14 @@ const Home = () => {
                         courses.map(course => <SingleCourse key={course.id} course={course}></SingleCourse>)
                     }
                 </div>
-                <h1 id='reviews'>
+                <h1 id='reviews' className='text-center'>
                     Reviews
                 </h1>
-                {/* <div>
+                <div className='reviews '>
                     {
-                        reviews.map(review => <SingleReview key={review.id} course={review}></SingleReview>)
+                        reviews.map(review => <SingleReview key={review.id} review={review}></SingleReview>)
                     }
-                </div> */}
+                </div>
             </div>
         </div>
 
