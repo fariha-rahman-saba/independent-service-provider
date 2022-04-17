@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import banner from '../../images/banner/banner_1.jpg'
 import SingleCourse from '../SingleCourse/SingleCourse';
 import SingleReview from '../SingleReview/SignleReview';
+import './Home.css'
 const Home = () => {
     const [courses, setCourses] = useState([]);
     useEffect(() => {
@@ -23,11 +24,11 @@ const Home = () => {
             <img className='img-fluid' src={banner} alt="" />
             <div>
                 <h1 id='courses'>Courses</h1>
-                {/* <div className='courses'>
+                <div className='courses'>
                     {
-                        // courses.map(course => <SingleCourse key={course.id} course={course}></SingleCourse>)
+                        courses.map(course => <SingleCourse key={course.id} course={course}></SingleCourse>)
                     }
-                </div> */}
+                </div>
                 <h1 id='reviews'>
                     Reviews
                 </h1>

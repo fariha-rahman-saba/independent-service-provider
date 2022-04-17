@@ -1,4 +1,5 @@
 import React from 'react';
+import './SingleCourse.css'
 
 const SingleCourse = ({ course }) => {
     console.log(course);
