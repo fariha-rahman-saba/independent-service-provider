@@ -42,7 +42,7 @@ const Register = () => {
 
     return (
         <div className='container w-50 mx-auto'>
-            <h2 className='text-primary text-center mt-2 mb-2'>Please Register</h2>
+            <h2 className='text-secondary text-center mt-3 mb-3'>Please Register</h2>
             {/* <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
@@ -68,13 +68,17 @@ const Register = () => {
                 {/* <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" /> */}
                 {/* <label className={agree ? 'ps-2': 'ps-2 text-danger'} htmlFor="terms">Accept Genius Car Terms and Conditions</label> */}
                 {/* <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Genius Car Terms and Conditions</label>*/}
-                <input
-                    // disabled={!agree}
-                    className='w-50 mx-auto btn btn-primary mt-2'
-                    type="submit"
-                    value="Register" />
+                <div className='text-center'>
+                    <input
+                        // disabled={!agree}
+                        className='w-50 mx-auto btn btn-secondary mt-2'
+                        type="submit"
+                        value="Register" />
+                </div>
             </form>
-            <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
+            <div className='text-center mt-2'>
+                <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
+            </div>
             <SocialLogin></SocialLogin>
         </div>
     );
