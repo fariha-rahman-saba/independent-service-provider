@@ -9,3 +9,29 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
+
+/* make courses and reviews responsive */
+
+/* for mobile phones */
+
+@media only screen and (max-width:576px) {
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .reviews {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* for tablets */
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
