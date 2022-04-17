@@ -23,7 +23,7 @@ const Home = () => {
         <div >
             <img className='img-fluid' src={banner} alt="" />
             <div>
-                <h1 id='courses'>Courses</h1>
+                <h1 id='courses' className='text-center mt-5'>Courses</h1>
                 <div className='courses'>
                     {
                         courses.map(course => <SingleCourse key={course.id} course={course}></SingleCourse>)
