@@ -4,6 +4,8 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import auth from '../../../firebase.init';
 import { Button, Form, ToastContainer } from 'react-bootstrap';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { toast } from 'react-toastify';
+import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -20,6 +22,11 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
 
     if (user) {
         navigate(from, { replace: true });
@@ -45,10 +52,10 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            // toast('Sent email');
+            toast('Email sent');
         }
         else {
-            // toast('please enter your email address');
+            toast('please enter your email address');
         }
     }
 
