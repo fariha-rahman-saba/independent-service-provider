@@ -74,7 +74,9 @@ const Login = () => {
                     Login
                 </Button>
             </Form>
-            {errorElement}
+            <div className='text-center'>
+                {errorElement}
+            </div>
             <div className='text-center mt-2'>
                 <p>New to Code With Saba? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
                 <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
