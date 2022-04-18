@@ -4,6 +4,9 @@ import SingleCourse from '../SingleCourse/SingleCourse';
 import SingleReview from '../SingleReview/SignleReview';
 import './Home.css'
 const Home = () => {
+
+    // load courses
+
     const [courses, setCourses] = useState([]);
     useEffect(() => {
         fetch('courses.json')
@@ -11,6 +14,9 @@ const Home = () => {
             .then(data => setCourses(data));
     }, []);
     console.log(courses);
+
+    // load reviews
+
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
         fetch('reviews.json')
@@ -18,17 +24,21 @@ const Home = () => {
             .then(data => setReviews(data));
     }, []);
     console.log(reviews);
+
     return (
 
         <div >
             <img className='img-fluid' src={banner} alt="" />
             <div>
+                {/* Courses section */}
+
                 <h1 id='courses' className='text-center mt-5'>Courses</h1>
                 <div className='courses'>
                     {
                         courses.map(course => <SingleCourse key={course.id} course={course}></SingleCourse>)
                     }
                 </div>
+                {/* Reviews Section */}
                 <h1 id='reviews' className='text-center'>
                     Reviews
                 </h1>

@@ -7,6 +7,8 @@ A list of technologies used within the project:
 * [CSS]: Version 3
 * [JavaScript]: Version ES6
 * [React]: Version 18.0.0
+* [React-Router]
+* [Firebase]
 ***
 ## Details:
 * In this project I have created a online course selling for an individual tutor

@@ -49,6 +49,8 @@ const Login = () => {
         navigate('/register');
     }
 
+    // for reseting password
+
     const resetPassword = async () => {
         const email = emailRef.current.value;
         if (email) {

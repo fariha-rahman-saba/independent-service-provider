@@ -5,7 +5,7 @@ const NotFound = () => {
     return (
         <div>
             <img style={{ width: '100%' }} src={notfound} alt="" />
-            <Link to="/"><button>Go Back</button>
+            <Link to="/"><button className='w-50 mx-auto d-block mb-5 btn btn-primary mt-5'>Go Back</button>
             </Link>
         </div>
     );
